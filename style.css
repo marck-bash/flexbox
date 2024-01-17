@@ -1,0 +1,42 @@
+.parent-container {
+    display: flex;
+    background-color: khaki;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cat {
+    width: 100px;
+    height: auto;
+    /* flex-grow: 1; */
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1; 
+}
+
+.link1:hover, .link2:hover {
+    color: black;
+}
+
+@media (min-width: 420px) {
+    .parent-container {
+        background-color: forestgreen;
+    }
+    
+    .link {
+        flex-direction: row;
+    }
+    
+}
+
+
+@media (min-width: 850px) {
+    .parent-container {
+        background-color: deeppink;
+    }
+}
